@@ -1,0 +1,21 @@
+server:
+  port: 8094
+
+spring:
+  application:
+    name: chronoreserve
+
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/orclpdb1
+    username: chronoreserve
+    password: OracleHomeUser1
+    driver-class-name: oracle.jdbc.OracleDriver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.OracleDialect

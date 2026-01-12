@@ -1,0 +1,15 @@
+package com.chronoreserve.Entity;
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "specialization")
+public class Specialization {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(nullable = false, unique = true)
+    private String name;
+}
