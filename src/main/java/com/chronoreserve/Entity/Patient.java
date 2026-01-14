@@ -3,7 +3,11 @@ package com.chronoreserve.Entity;
 import com.chronoreserve.enums.BloodGroup;
 import com.chronoreserve.enums.Status;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "patient")
 public class Patient {
