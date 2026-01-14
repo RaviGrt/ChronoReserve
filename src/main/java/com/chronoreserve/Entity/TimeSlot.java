@@ -1,10 +1,16 @@
 package com.chronoreserve.Entity;
 
+import com.chronoreserve.enums.SlotStatus;
 import com.chronoreserve.enums.Status;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+@Getter
+@Setter
 @Entity
 @Table(
         name = "time_slot",
@@ -35,5 +41,5 @@ public class TimeSlot {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private Status status;
+    private SlotStatus status;
 }
