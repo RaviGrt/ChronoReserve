@@ -2,8 +2,10 @@ package com.chronoreserve.Entity;
 
 import com.chronoreserve.enums.Status;
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
+@Data
 @Table(
         name = "appointment",
         uniqueConstraints = {

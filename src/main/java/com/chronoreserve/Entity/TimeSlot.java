@@ -3,6 +3,7 @@ package com.chronoreserve.Entity;
 import com.chronoreserve.enums.SlotStatus;
 import com.chronoreserve.enums.Status;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
