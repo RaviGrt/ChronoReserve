@@ -1,17 +1,12 @@
 package com.chronoreserve.Entity;
 
-import com.chronoreserve.enums.Status;
+import com.chronoreserve.enums.AppointmentStatus;
 import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
 @Data
-@Table(
-        name = "appointment",
-        uniqueConstraints = {
-                @UniqueConstraint(columnNames = {"slot_id"})
-        }
-)
+@Table(name = "appointment")
 public class Appointment {
 
     @Id
@@ -28,5 +23,5 @@ public class Appointment {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private Status status;
+    private AppointmentStatus status;
 }
